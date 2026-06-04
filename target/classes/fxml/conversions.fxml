@@ -1,0 +1,6 @@
+<StackPane xmlns:fx="http://javafx.com/fxml" prefWidth="800" prefHeight="600">
+    <VBox spacing="12" alignment="CENTER">
+        <Label text="Conversiones" styleClass="screen-title"/>
+        <Label text="Longitud, Masa, Temperatura, Volumen, Tiempo, etc."/>
+    </VBox>
+</StackPane>
