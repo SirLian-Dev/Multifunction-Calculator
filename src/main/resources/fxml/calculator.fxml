@@ -6,9 +6,11 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox xmlns:fx="http://javafx.com/fxml"
+	  fx:controller="com.julian.multicalc.presentation.controller.CalculatorController"
       alignment="CENTER"
       fillWidth="false"
-      spacing="205>
+      spacing="205"
+      >
 
     <VBox styleClass="calculator-container"
           spacing="15">
@@ -27,29 +29,28 @@
 
         <GridPane hgap="10" vgap="10">
 
-            <Button text="AC" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="calc-btn"/>
+            <Button text="AC" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="calc-btn" onAction="#onClearPressed"/>
             <Button text="±" GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="calc-btn"/>
             <Button text="%%" GridPane.rowIndex="0" GridPane.columnIndex="2" styleClass="calc-btn"/>
             <Button text="÷" GridPane.rowIndex="0" GridPane.columnIndex="3" styleClass="operator-btn"/>
 
-            <Button text="7" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="calc-btn"/>
-            <Button text="8" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="calc-btn"/>
-            <Button text="9" GridPane.rowIndex="1" GridPane.columnIndex="2" styleClass="calc-btn"/>
+            <Button text="7" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="calc-btn" onAction="#onDigitPressed"/>
+            <Button text="8" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="calc-btn" onAction="#onDigitPressed"/>
+            <Button text="9" GridPane.rowIndex="1" GridPane.columnIndex="2" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="×" GridPane.rowIndex="1" GridPane.columnIndex="3" styleClass="operator-btn"/>
 
-            <Button text="4" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="calc-btn"/>
-            <Button text="5" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="calc-btn"/>
-            <Button text="6" GridPane.rowIndex="2" GridPane.columnIndex="2" styleClass="calc-btn"/>
+            <Button text="4" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="calc-btn" onAction="#onDigitPressed"/>
+            <Button text="5" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="calc-btn" onAction="#onDigitPressed"/>
+            <Button text="6" GridPane.rowIndex="2" GridPane.columnIndex="2" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="-" GridPane.rowIndex="2" GridPane.columnIndex="3" styleClass="operator-btn"/>
 
-            <Button text="1" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="calc-btn"/>
-            <Button text="2" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="calc-btn"/>
-            <Button text="3" GridPane.rowIndex="3" GridPane.columnIndex="2" styleClass="calc-btn"/>
+            <Button text="1" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="calc-btn" onAction="#onDigitPressed"/>
+            <Button text="2" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="calc-btn" onAction="#onDigitPressed"/>
+            <Button text="3" GridPane.rowIndex="3" GridPane.columnIndex="2" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="+" GridPane.rowIndex="3" GridPane.columnIndex="3" styleClass="operator-btn"/>
 
-            <Button text="0" GridPane.rowIndex="4" GridPane.columnIndex="0"
-                    GridPane.columnSpan="2"
-                    styleClass="zero-btn"/>
+            <Button text="0" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2"
+                    styleClass="zero-btn" onAction="#onDigitPressed"/>
 
             <Button text="." GridPane.rowIndex="4" GridPane.columnIndex="2"
                     styleClass="calc-btn"/>
