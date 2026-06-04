@@ -32,31 +32,28 @@
             <Button text="AC" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="calc-btn" onAction="#onClearPressed"/>
             <Button text="±" GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="calc-btn"/>
             <Button text="%%" GridPane.rowIndex="0" GridPane.columnIndex="2" styleClass="calc-btn"/>
-            <Button text="÷" GridPane.rowIndex="0" GridPane.columnIndex="3" styleClass="operator-btn"/>
+            <Button text="÷" GridPane.rowIndex="0" GridPane.columnIndex="3" styleClass="operator-btn" onAction="#onOperatorPressed"/>
 
             <Button text="7" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="8" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="9" GridPane.rowIndex="1" GridPane.columnIndex="2" styleClass="calc-btn" onAction="#onDigitPressed"/>
-            <Button text="×" GridPane.rowIndex="1" GridPane.columnIndex="3" styleClass="operator-btn"/>
+            <Button text="×" GridPane.rowIndex="1" GridPane.columnIndex="3" styleClass="operator-btn" onAction="#onOperatorPressed"/>
 
             <Button text="4" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="5" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="6" GridPane.rowIndex="2" GridPane.columnIndex="2" styleClass="calc-btn" onAction="#onDigitPressed"/>
-            <Button text="-" GridPane.rowIndex="2" GridPane.columnIndex="3" styleClass="operator-btn"/>
+            <Button text="-" GridPane.rowIndex="2" GridPane.columnIndex="3" styleClass="operator-btn" onAction="#onOperatorPressed"/>
 
             <Button text="1" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="2" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="calc-btn" onAction="#onDigitPressed"/>
             <Button text="3" GridPane.rowIndex="3" GridPane.columnIndex="2" styleClass="calc-btn" onAction="#onDigitPressed"/>
-            <Button text="+" GridPane.rowIndex="3" GridPane.columnIndex="3" styleClass="operator-btn"/>
+            <Button text="+" GridPane.rowIndex="3" GridPane.columnIndex="3" styleClass="operator-btn" onAction="#onOperatorPressed"/>
 
-            <Button text="0" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2"
-                    styleClass="zero-btn" onAction="#onDigitPressed"/>
+            <Button text="0" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="zero-btn" onAction="#onDigitPressed"/>
 
-            <Button text="." GridPane.rowIndex="4" GridPane.columnIndex="2"
-                    styleClass="calc-btn"/>
+            <Button text="." GridPane.rowIndex="4" GridPane.columnIndex="2" styleClass="calc-btn"/>
 
-            <Button text="=" GridPane.rowIndex="4" GridPane.columnIndex="3"
-                    styleClass="equals-btn"/>
+            <Button text="=" GridPane.rowIndex="4" GridPane.columnIndex="3" styleClass="equals-btn" onAction="#onOperatorPressed"/>
 
         </GridPane>
 
