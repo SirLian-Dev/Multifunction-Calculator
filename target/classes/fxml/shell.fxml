@@ -9,7 +9,7 @@
             styleClass="app-root">
 
     <left>
-        <VBox spacing="10" prefWidth="220" styleClass="sidebar" BorderPane.alignment="CENTER">
+        <VBox spacing="10" prefWidth="180" styleClass="sidebar" BorderPane.alignment="CENTER">
             <Label text="MultiCalc" styleClass="app-title"/>
             <Separator/>
 
